@@ -9,6 +9,8 @@ readme = "README.md"
 edition = "2018"
 keywords = []
 categories = []
+include = ["src/templates/*", "src/main.rs"]
+
 authors = [
     "Yoshua Wuyts <yoshuawuyts@gmail.com>"
 ]
