@@ -58,26 +58,23 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     fs::create_dir("src")?;
     fs::create_dir("tests")?;
 
-    write(include_str!("../templates/README.md"), "README.md")?;
-    write(include_str!("../templates/LICENSE-MIT"), "LICENSE-MIT")?;
+    write(include_str!("templates/README.md"), "README.md")?;
+    write(include_str!("templates/LICENSE-MIT"), "LICENSE-MIT")?;
+    write(include_str!("templates/LICENSE-APACHE"), "LICENSE-APACHE")?;
+    write(include_str!("templates/Cargo.toml"), "Cargo.toml")?;
+    write(include_str!("templates/.gitignore"), ".gitignore")?;
+    write(include_str!("templates/tests/test.rs"), "tests/test.rs")?;
+    write(include_str!("templates/src/lib.rs"), "src/lib.rs")?;
     write(
-        include_str!("../templates/LICENSE-APACHE"),
-        "LICENSE-APACHE",
-    )?;
-    write(include_str!("../templates/Cargo.toml"), "Cargo.toml")?;
-    write(include_str!("../templates/.gitignore"), ".gitignore")?;
-    write(include_str!("../templates/tests/test.rs"), "tests/test.rs")?;
-    write(include_str!("../templates/src/lib.rs"), "src/lib.rs")?;
-    write(
-        include_str!("../templates/.github/CONTRIBUTING.md"),
+        include_str!("templates/.github/CONTRIBUTING.md"),
         ".github/CONTRIBUTING.md",
     )?;
     write(
-        include_str!("../templates/.github/CODE_OF_CONDUCT.md"),
+        include_str!("templates/.github/CODE_OF_CONDUCT.md"),
         ".github/CODE_OF_CONDUCT.md",
     )?;
     write(
-        include_str!("../templates/.github/workflows/ci.yaml"),
+        include_str!("templates/.github/workflows/ci.yaml"),
         ".github/workflows/ci.yaml",
     )?;
 
