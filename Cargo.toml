@@ -12,7 +12,7 @@ categories = []
 include = ["src/templates/*", "src/main.rs"]
 
 authors = [
-    "Yoshua Wuyts <yoshuawuyts@gmail.com>"
+    "Yoshua Wuyts <rust@yosh.is>"
 ]
 
 [features]
